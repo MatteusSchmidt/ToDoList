@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-    
-    @State var email = ""
-    @State var password = ""
+    @StateObject var viewModel = LoginViewViewModel()
     
     var body: some View {
         NavigationView() {
@@ -21,28 +19,31 @@ struct LoginView: View {
                            angle: 15,
                            background: Color.pink)
                 
+                
                 // Login Form
                 Form {
-                        //first argument is placeholder, second is a binding that needs to be created before the body variable
-                    TextField("Email Address", text: $email)
-                            //style is the argument of textField Style, can choose any
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-
-                    SecureField("Password", text: $password)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-
-                    Button {
-                        // attempt login
-                    } label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius:20)
-                                .foregroundColor(Color.blue)
-                            
-                            Text("Login")
-                                .foregroundColor(Color.white)
-                                .bold()
-                        }
+                    // checking to see if fields are empty in the form
+                    if !viewModel.errorMessage.isEmpty {
+                        Text(viewModel.errorMessage)
+                            .foregroundColor(Color.red)
                     }
+                        //first argument is placeholder, second is a binding that needs to be created before the body variable
+                    TextField("Email Address", text: $viewModel.email)
+                            //style is the argument of textField Style, can choose any
+                        .textFieldStyle(DefaultTextFieldStyle())
+                        .autocapitalization(.none)
+
+                    SecureField("Password", text: $viewModel.password)
+                        .textFieldStyle(DefaultTextFieldStyle())
+
+                    TDLButton(
+                        title: "Login",
+                        color: .blue
+                    ) {
+                            //Attempt login
+                        viewModel.login()
+                    }
+                    .padding()
                 }
                 .offset(y: -50)
                 

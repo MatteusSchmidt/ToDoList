@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0DC43D2AB53BC0005C411E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0DC43C2AB53BC0005C411E /* Launch Screen.storyboard */; };
 		0A53E4FE2AAABBE600D7FB59 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A53E4FD2AAABBE600D7FB59 /* HeaderView.swift */; };
 		0A76AB722AAAA4E900B35791 /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A76AB712AAAA4E900B35791 /* ToDoListApp.swift */; };
 		0A76AB742AAAA4E900B35791 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A76AB732AAAA4E900B35791 /* MainView.swift */; };
@@ -31,9 +32,12 @@
 		0A76ABA52AAAB1CA00B35791 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A76ABA42AAAB1CA00B35791 /* LoginViewViewModel.swift */; };
 		0A76ABA72AAAB1D200B35791 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A76ABA62AAAB1D200B35791 /* RegisterViewViewModel.swift */; };
 		0A76ABA92AAAB1E500B35791 /* ToDoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A76ABA82AAAB1E500B35791 /* ToDoListItemViewViewModel.swift */; };
+		0AEC30BB2AAD15F400A402DF /* TDLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEC30BA2AAD15F400A402DF /* TDLButton.swift */; };
+		0AEC30BD2AAD30D700A402DF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEC30BC2AAD30D700A402DF /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A0DC43C2AB53BC0005C411E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		0A53E4FD2AAABBE600D7FB59 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		0A76AB6E2AAAA4E900B35791 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A76AB712AAAA4E900B35791 /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 		0A76ABA42AAAB1CA00B35791 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		0A76ABA62AAAB1D200B35791 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		0A76ABA82AAAB1E500B35791 /* ToDoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewViewModel.swift; sourceTree = "<group>"; };
+		0AEC30BA2AAD15F400A402DF /* TDLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDLButton.swift; sourceTree = "<group>"; };
+		0AEC30BC2AAD30D700A402DF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 				0A76AB942AAAB0DA00B35791 /* RegisterView.swift */,
 				0A76AB962AAAB10800B35791 /* ToDoListItemView.swift */,
 				0A53E4FD2AAABBE600D7FB59 /* HeaderView.swift */,
+				0AEC30BA2AAD15F400A402DF /* TDLButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,6 +159,8 @@
 				0A76AB7F2AAAA63000B35791 /* GoogleService-Info.plist */,
 				0A76AB712AAAA4E900B35791 /* ToDoListApp.swift */,
 				0A76AB752AAAA4EA00B35791 /* Assets.xcassets */,
+				0AEC30BC2AAD30D700A402DF /* Extensions.swift */,
+				0A0DC43C2AB53BC0005C411E /* Launch Screen.storyboard */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -224,6 +233,7 @@
 			files = (
 				0A76AB792AAAA4EA00B35791 /* Preview Assets.xcassets in Resources */,
 				0A76AB762AAAA4EA00B35791 /* Assets.xcassets in Resources */,
+				0A0DC43D2AB53BC0005C411E /* Launch Screen.storyboard in Resources */,
 				0A76AB802AAAA63000B35791 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +251,7 @@
 				0A76ABA72AAAB1D200B35791 /* RegisterViewViewModel.swift in Sources */,
 				0A76AB9D2AAAB19600B35791 /* MainViewViewModel.swift in Sources */,
 				0A76AB8F2AAAB0A700B35791 /* ToDoListView.swift in Sources */,
+				0AEC30BB2AAD15F400A402DF /* TDLButton.swift in Sources */,
 				0A76AB952AAAB0DA00B35791 /* RegisterView.swift in Sources */,
 				0A76AB9F2AAAB1A200B35791 /* ProfileViewViewModel.swift in Sources */,
 				0A76AB8D2AAAB09900B35791 /* ProfileView.swift in Sources */,
@@ -249,6 +260,7 @@
 				0A76ABA12AAAB1AF00B35791 /* ToDoListViewViewModel.swift in Sources */,
 				0A76ABA52AAAB1CA00B35791 /* LoginViewViewModel.swift in Sources */,
 				0A76AB722AAAA4E900B35791 /* ToDoListApp.swift in Sources */,
+				0AEC30BD2AAD30D700A402DF /* Extensions.swift in Sources */,
 				0A76AB9B2AAAB15E00B35791 /* ToDoListItem.swift in Sources */,
 				0A76AB912AAAB0B700B35791 /* NewItemView.swift in Sources */,
 				0A76ABA32AAAB1C000B35791 /* NewItemViewViewModel.swift in Sources */,
@@ -387,6 +399,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -415,6 +428,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
